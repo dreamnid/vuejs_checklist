@@ -1,0 +1,209 @@
+$ipad-dpi: 144px;
+$desktop-dpi: 72px;
+
+@function convert-dpi($size) {
+  @return $size/$ipad-dpi * $desktop-dpi;
+}
+
+$header-bar-height: convert-dpi(150px);
+$header-font-size: convert-dpi(18px);
+$table-cell-height: convert-dpi(100px);
+$table-cell-padding: convert-dpi(20px);
+$checkbox-size: convert-dpi(40px);
+
+$header-font-size: convert-dpi(32px);
+$body-font-size: convert-dpi(32px);
+
+$header-color: rgb(34, 54, 78);
+$rule-color: rgb(196, 205, 215);
+$green: rgb(86, 158, 99);
+$button-color: rgb(82, 151, 214);
+
+@mixin table-cell-border {
+  border-bottom: 1px solid $rule-color;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
+
+@mixin table-cell {
+  line-height: $table-cell-height;
+  min-height: $table-cell-height;
+  padding: 0 $table-cell-padding;
+
+  &:not(:last-child) {
+    @include table-cell-border;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: $body-font-size;
+}
+
+h1 {
+  font-size: $header-font-size;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li > a {
+  display: block;
+}
+
+label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 0 $table-cell-padding;
+}
+
+input[type=text] {
+  @include table-cell;
+  appearance: none;
+  box-sizing: border-box;
+  display: block;
+  outline: none;
+  width: 100%;
+
+  &::placeholder {
+    font-weight: 500;
+  }
+}
+
+input[type=submit] {
+  appearance: none;
+  background-color: $button-color;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: ($table-cell-height - $table-cell-padding)/2 $table-cell-padding;
+  padding: 0 $table-cell-padding;
+  user-select: none;
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+}
+
+#app > div {
+  display: flex;
+  flex-flow: column nowrap;
+
+  > h1 {
+    background-color: $header-color;
+    color: #fff;
+    flex: 0 0 $header-bar-height;
+    font-weight: 500;
+    line-height: $header-bar-height;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+
+    a {
+      font-size: $header-bar-height/2;
+      left: $table-cell-padding;
+      position: absolute;
+    }
+  }
+
+  > ul,
+  > form {
+    flex: 1 1 auto;
+    overflow-y: auto;
+  }
+}
+
+li {
+  @include table-cell;
+}
+
+.new-checklist a {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxjaXJjbGUgc3Ryb2tlPSIjMzJBMTVDIiBmaWxsPSIjMzJBMTVDIiBjeD0iMjAiIGN5PSIyMCIgcj0iMTkuNSIvPjxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik01IDE1aDEwVjVoMTB2MTBoMTB2MTBIMjV2MTBIMTVWMjVINXoiLz48L2c+PC9zdmc+');
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-left: $checkbox-size + $table-cell-padding;
+}
+
+.checklist-item label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  font-weight: normal;
+  height: $table-cell-height;
+  user-select: none;
+
+  input,
+  span { display: block; }
+
+  input {
+    flex: 0 0 auto;
+  }
+
+  span.challenge {
+    flex: 1 1 auto;
+  }
+
+  span.response {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+.new-item form {
+  @include table-cell-border;
+  display: flex;
+  flex-flow: row nowrap;
+
+  input {
+    border-bottom: 0 !important;
+  }
+
+  input[name=response] {
+    text-align: right;
+  }
+}
+
+input[type=checkbox] {
+  appearance: none;
+
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIHN0cm9rZT0iI0FFQkRDOSIgc3Ryb2tlLXdpZHRoPSIyIiBjeD0iMjAiIGN5PSIyMCIgcj0iMTkiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==');
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: inline-block;
+  height: $checkbox-size;
+  margin-right: $table-cell-padding;
+  outline: none;
+  width: $checkbox-size;
+
+  &:checked {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxjaXJjbGUgc3Ryb2tlPSIjMzJBMTVDIiBmaWxsPSIjMzJBMTVDIiBjeD0iMjAiIGN5PSIyMCIgcj0iMTkuNSIvPjxwYXRoIHN0cm9rZT0iI0ZGRiIgZmlsbD0iI0ZGRiIgZD0iTTExLjUgMjIuNWwyLTIgNCA0IDExLTEyIDIgMi0xMyAxNHoiLz48L2c+PC9zdmc+');
+  }
+}

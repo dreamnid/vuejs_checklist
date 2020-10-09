@@ -1,0 +1,848 @@
+{
+  "checklists": [
+    {
+      "name":  "PRE-START",
+      "items": [
+        {
+          "challenge": "Bath Mats",
+          "response":  "Stowed"
+        },
+        {
+          "challenge": "Key",
+          "response":  "In"
+        },
+        {
+          "challenge": "Master Switch",
+          "response":  "On"
+        },
+        {
+          "challenge": "Exterior Preflight",
+          "response":  "Complete"
+        },
+        {
+          "challenge": "Chocks, Oil Cap & Door"
+        },
+        {
+          "challenge": "Belts, S\/H",
+          "response":  "Adjust and Locked"
+        },
+        {
+          "challenge": "Cockpit",
+          "response":  "Organized & Secured"
+        },
+        {
+          "challenge": "Cell Phones",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Crew Briefing",
+          "response":  "Responsibilities"
+        },
+        {
+          "challenge": "Responsibilities, Who's PIC, Quiet Cockpit, Door Operation, Vents, Seat Belts, Fire Extinguisher"
+        },
+        {
+          "challenge": "Control Stick Enable Rocker Switch",
+          "response":  "As Desired"
+        },
+        {
+          "challenge": "Trim",
+          "response":  "Set"
+        },
+        {
+          "challenge": "Fuel Selector",
+          "response":  "Wing"
+        },
+        {
+          "challenge": "Power Levers",
+          "response":  "In - In - Out"
+        },
+        {
+          "challenge": "Brakes",
+          "response":  "Test & Set"
+        },
+        {
+          "challenge": "PFD Engine - Main",
+          "response":  "Fuel Press Page"
+        },
+        {
+          "challenge": "PFD Engine - Fuel",
+          "response":  "Set Fuel On Board"
+        },
+        {
+          "challenge": "Strobes",
+          "response":  "On"
+        },
+        {
+          "challenge": "Boost Pump",
+          "response":  "On (if Req)"
+        },
+        {
+          "challenge": "Fuel Flow goes up then down"
+        },
+        {
+          "challenge": "Mixture",
+          "response":  "In \/ Out (if Req)"
+        },
+        {
+          "challenge": "In until about 4.9 gph"
+        },
+        {
+          "challenge": "Boost Pump",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Throttle",
+          "response":  "1 1\/2  turn in from idle"
+        },
+        {
+          "challenge": "(1\/2 way in if Flooded or in if Hot"
+        },
+        {
+          "challenge": "Starter",
+          "response":  "Engage"
+        },
+        {
+          "challenge": "Mixture",
+          "response":  "Into about 3\" of  Full Rich"
+        },
+        {
+          "challenge": "Throttle",
+          "response":  "900-1000 RPM"
+        },
+        {
+          "challenge": "<= 1000 RPM until oil temp registering"
+        },
+        {
+          "challenge": "< 1200 RPM until oil temp > 90°"
+        },
+        {
+          "challenge": "Oil Pressure",
+          "response":  "Check"
+        },
+        {
+          "challenge": "Idling- >24 psi, Normal out of idle-60-90 psi, Minimum-55 psi, Maxium-95 psi"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "challenge": "Rocker Switches",
+          "response":  "As Req"
+        },
+        {
+          "challenge": "Flaps",
+          "response":  "Up"
+        },
+        {
+          "challenge": "Mixture",
+          "response":  "Lean Aggressively"
+        },
+        {
+          "challenge": "G3Xs & G430 Databases",
+          "response":  "Menu x 2 \/ Aux 2"
+        },
+        {
+          "challenge": "Transponder",
+          "response":  "1200 \/ Alt"
+        },
+        {
+          "challenge": "AOA",
+          "response":  "Test"
+        },
+        {
+          "challenge": "Red Tests, Black Dims"
+        },
+        {
+          "challenge": "All lights for several seconds & audio"
+        },
+        {
+          "challenge": "Autopilot",
+          "response":  "AP \/ EFIS"
+        },
+        {
+          "challenge": "Aircraft stopped before testing Autopilot"
+        },
+        {
+          "challenge": "HDG - moves stick"
+        },
+        {
+          "challenge": "Alt & Vert Speed - moves stick"
+        },
+        {
+          "challenge": "Control Stick - disconnects"
+        },
+        {
+          "challenge": "Flap Switches",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Flight Instruments",
+          "response":  "Check"
+        },
+        {
+          "challenge": "Standby Compass",
+          "response":  "Check"
+        },
+        {
+          "challenge": "Heading Indicators (2)",
+          "response":  "Check"
+        },
+        {
+          "challenge": "Attitude Indicators (3)",
+          "response":  "Check"
+        },
+        {
+          "challenge": "Altimeters (3)",
+          "response":  "Field Elv +-75'"
+        },
+        {
+          "challenge": "Parking Brake",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Toe Brakes",
+          "response":  "Check"
+        },
+        {
+          "challenge": "Turning Taxi",
+          "response":  "Check"
+        }
+      ],
+      "name":  "AFTER START"
+    },
+    {
+      "items": [
+        {
+          "challenge": "Mixture",
+          "response":  "As Lean As Possible"
+        },
+        {
+          "challenge": "Flight Controls",
+          "response":  "Free and Correct"
+        },
+        {
+          "challenge": "Avionics",
+          "response":  "Check & Set"
+        },
+        {
+          "challenge": "Radios",
+          "response":  "Comm & Nav"
+        },
+        {
+          "challenge": "Altimeters",
+          "response":  "Set"
+        },
+        {
+          "challenge": "Altitude & Heading",
+          "response":  "Preselect"
+        },
+        {
+          "challenge": "CDI",
+          "response":  "Nav Source"
+        },
+        {
+          "challenge": "Transponder",
+          "response":  "Set"
+        },
+        {
+          "challenge": "Flight Plan",
+          "response":  "Entered"
+        },
+        {
+          "challenge": "Destination",
+          "response":  "Correct"
+        },
+        {
+          "challenge": "DTK, Miles, Time",
+          "response":  "Correct"
+        },
+        {
+          "challenge": "Flight Instruments",
+          "response":  "Set"
+        },
+        {
+          "challenge": "Engine Instruments",
+          "response":  "(before > 1200 RPM) Green"
+        },
+        {
+          "challenge": "Mixture",
+          "response":  "As Lean as Possible"
+        },
+        {
+          "challenge": "Alternator Checks",
+          "response":  "Oil Temp > 90°"
+        },
+        {
+          "challenge": "MFD",
+          "response":  " Engine\/Elec"
+        },
+        {
+          "challenge": "RPM",
+          "response":  "1200"
+        },
+        {
+          "challenge": "Voltage",
+          "response":  "13.4 - 14.1 Volts"
+        },
+        {
+          "challenge": "Amps",
+          "response":  "Indicating"
+        },
+        {
+          "challenge": "MAIN ALT",
+          "response":  "Off (Checks Batt Pwr)"
+        },
+        {
+          "challenge": "STBY ALT",
+          "response":  "On (Checks STBY ALT)"
+        },
+        {
+          "challenge": "MAIN ALT",
+          "response":  "On (Relieves STBY)"
+        },
+        {
+          "challenge": "STBY ALT",
+          "response":  "Off"
+        },
+        {
+          "challenge": "MFD",
+          "response":  "Main (Engine Instruments)"
+        },
+        {
+          "challenge": "RPM",
+          "response":  "(Enrich Mixture if Required) 1700"
+        },
+        {
+          "challenge": "Prop",
+          "response":  "(If Oil Cold) Cycle Quickly"
+        },
+        {
+          "challenge": "MAG",
+          "response":  "RPM Drop &  EGT Rise"
+        },
+        {
+          "challenge": "Pitot Heat, Lights, Etc",
+          "response":  "As Desired"
+        },
+        {
+          "challenge": "Fuel Pump",
+          "response":  "On"
+        },
+        {
+          "challenge": "Flaps",
+          "response":  "20°"
+        },
+        {
+          "challenge": "DOORS and Seat Belts",
+          "response":  "Secure"
+        },
+        {
+          "challenge": "Mixture",
+          "response":  "Full Rich"
+        },
+        {
+          "challenge": "Warning\/Caution Lights",
+          "response":  "Out"
+        },
+        {
+          "challenge": "Engine Gauges",
+          "response":  "(Oil Temp > 100°)  Normal"
+        },
+        {
+          "challenge": "GS \/ 60 x (Required Climb Gradient) = Required FPM "
+        },
+        {
+          "challenge": "No DP: Cross departure end > 35\" AGL. Runway heading to > 400' AGL, then > 200' \/ NM to IFR altitude."
+        },
+        {
+          "challenge": "If Mags check bad:"
+        },
+        {
+          "challenge": "Mixture -- Full Rich"
+        },
+        {
+          "challenge": "Throttle -- 2200 RPM"
+        },
+        {
+          "challenge": "Mixture -- Lean slowly to slight roughness"
+        },
+        {
+          "challenge": "Mixture -- Enrich slightly to obtain smooth running"
+        },
+        {
+          "challenge": "Timer -- Start, run for 60 seconds"
+        },
+        {
+          "challenge": "Mixture -- Full Rich"
+        },
+        {
+          "challenge": "Throttle -- 2200 RPM"
+        },
+        {
+          "challenge": "Mags -- Check Again"
+        }
+      ],
+      "name":  "EOR (LAST CHANCE)"
+    },
+    {
+      "name":  "TAKEOFF, CLIMB, CRUISE",
+      "items": [
+        {
+          "challenge": "Prepare to Abort",
+          "response":  "Psyched"
+        },
+        {
+          "challenge": "RW Hdg",
+          "response":  "Check"
+        },
+        {
+          "challenge": "R.E.A.C.T",
+          "response":  "All Forward"
+        },
+        {
+          "challenge": "RPM & MP",
+          "response":  "about 2700 & Altimeter Setting"
+        },
+        {
+          "challenge": "Engine Guages",
+          "response":  "Normal"
+        },
+        {
+          "challenge": "Airspeed",
+          "response":  "Alive"
+        },
+        {
+          "challenge": "Rotate",
+          "response":  "about 60"
+        },
+        {
+          "challenge": "Rotate (Vr)",
+          "response":  "approx 60 Knots"
+        },
+        {
+          "challenge": "Vy=108 K,  Va & Vclimb 126 K   "
+        },
+        {
+          "challenge": "Vx, Vg &  L\/D Max= 85 K or AOA 2G-1 Y"
+        },
+        {
+          "challenge": "Vo, V15, V25, V40 = 67, 64, 60, 58 K"
+        },
+        {
+          "challenge": "4-5 K Slower at 1700 lbs"
+        },
+        {
+          "challenge": "Flaps",
+          "response":  "Up > 90 KIAS < 122 KIAS"
+        },
+        {
+          "challenge": "Flap Switches",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Fuel Selector",
+          "response":  "Wing"
+        },
+        {
+          "challenge": "Fuel Pump",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Power",
+          "response":  "Adjust for CHTs"
+        },
+        {
+          "challenge": "Fuel Selector",
+          "response":  "As Desired"
+        },
+        {
+          "challenge": "Power",
+          "response":  "Set"
+        },
+        {
+          "challenge": "Between 1800 & 2300 RPM, MP can be 4.5 above square."
+        },
+        {
+          "challenge": "Between 2400 & 2700 RPM, MP can be 2 above square"
+        },
+        {
+          "challenge": "Reference POH Section 5 Performance Chart"
+        },
+        {
+          "challenge": "Avoid combo of > 25\" MP and 2300-2350 RPM"
+        },
+        {
+          "challenge": "Avoid combo of < 15\" MP and > 2600 RPM"
+        },
+        {
+          "challenge": "Mixture",
+          "response":  "Fine Tune"
+        },
+        {
+          "challenge": "Lights (Inside & Outside)",
+          "response":  "As Required"
+        },
+        {
+          "challenge": "Fuel Pump",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Fuel Selector",
+          "response":  "Wing"
+        },
+        {
+          "challenge": "Fuel Quantity",
+          "response":  "Enough"
+        },
+        {
+          "challenge": "Engine Gauges",
+          "response":  "Check"
+        },
+        {
+          "challenge": "Altimeters",
+          "response":  "Set"
+        },
+        {
+          "challenge": "Compass vs AHARS",
+          "response":  "Check"
+        },
+        {
+          "challenge": "Flap Switch",
+          "response":  "Off"
+        },
+        {
+          "challenge": "CHT No Way (Red Flash)",
+          "response":  ">500° F"
+        },
+        {
+          "challenge": "CHT Too High (Red Steady)",
+          "response":  "435 - 499° F"
+        },
+        {
+          "challenge": "CHT High",
+          "response":  "400 - 435° F"
+        },
+        {
+          "challenge": ">75% Power",
+          "response":  "150° F ROP"
+        },
+        {
+          "challenge": "<75% Power",
+          "response":  "LOP"
+        },
+        {
+          "challenge": "Before increasing power",
+          "response":  "Mixture then Prop then Throttle"
+        }
+      ]
+    },
+    {
+      "name":  "VFR DESCENT & LANDING",
+      "items": [
+        {
+          "challenge": "Pitot Heat & Defrost",
+          "response":  "As Required"
+        },
+        {
+          "challenge": "Belts - S\/H",
+          "response":  "Secure"
+        },
+        {
+          "challenge": "Airport Information",
+          "response":  "Study"
+        },
+        {
+          "challenge": "ATIS",
+          "response":  "Copy"
+        },
+        {
+          "challenge": "Altimeters (2)",
+          "response":  "Set"
+        },
+        {
+          "challenge": "Radios",
+          "response":  "Preset"
+        },
+        {
+          "challenge": "Altitude",
+          "response":  "Preset"
+        },
+        {
+          "challenge": "Power",
+          "response":  "CHT > 240° F"
+        },
+        {
+          "challenge": "Speed",
+          "response":  "<170 KIAS"
+        },
+        {
+          "challenge": "Va=126 KIAS"
+        },
+        {
+          "challenge": "Mixture",
+          "response":  "Enrich during Descent"
+        },
+        {
+          "challenge": "(<50 deg\/min or 8°\/10 sec)"
+        },
+        {
+          "challenge": "45° to DOWNWIND"
+        },
+        {
+          "challenge": "Autopilot",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Lights",
+          "response":  "Aircraft & Runway"
+        },
+        {
+          "challenge": "Speed",
+          "response":  "2G - 1Y, 90-110 KIAS"
+        },
+        {
+          "challenge": "DOWNWIND                  (FGuMPS)"
+        },
+        {
+          "challenge": "Flaps",
+          "response":  "(Vfe = 122 KIAS) Set"
+        },
+        {
+          "challenge": "Gas",
+          "response":  "Selector & Boost"
+        },
+        {
+          "challenge": "Header If X-Wind \/ Slipping and <= 10 gal in wing tank"
+        },
+        {
+          "challenge": "Header If slipping for > 30 seconds while on wing tank"
+        },
+        {
+          "challenge": "Mixture",
+          "response":  "Rich"
+        },
+        {
+          "challenge": "Propeller",
+          "response":  "High RPM"
+        },
+        {
+          "challenge": "Switches",
+          "response":  "Set"
+        },
+        {
+          "challenge": "Seat belts - S\/H",
+          "response":  "Secure"
+        },
+        {
+          "challenge": "BASE \/ FINAL"
+        },
+        {
+          "challenge": "Base",
+          "response":  "2G-1Y - 85 K"
+        },
+        {
+          "challenge": "Final",
+          "response":  "2Y - 75 K"
+        },
+        {
+          "challenge": "Idle Power Approach",
+          "response":  "+5 K"
+        },
+        {
+          "challenge": "20° Flaps",
+          "response":  "2Y - +3 K"
+        },
+        {
+          "challenge": "No Flap",
+          "response":  "2Y - +10 K"
+        }
+      ]
+    },
+    {
+      "items": [
+        {
+          "challenge": "Flaps",
+          "response":  "Up"
+        },
+        {
+          "challenge": "Flaps",
+          "response":  "Down"
+        },
+        {
+          "challenge": "Gas -- Pump &  Selector",
+          "response":  "Off & Wing"
+        },
+        {
+          "challenge": "Mixture",
+          "response":  "Lean"
+        },
+        {
+          "challenge": "Switches",
+          "response":  "As Required"
+        },
+        {
+          "challenge": "P-Lead Check",
+          "response":  "Mags Off & On"
+        },
+        {
+          "challenge": "Switches",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Throttle",
+          "response":  "1000-1200 RPM"
+        },
+        {
+          "challenge": "Mixture",
+          "response":  "Idle Cut-Off"
+        },
+        {
+          "challenge": "Fuel Selector",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Trim Tab",
+          "response":  "Set"
+        },
+        {
+          "challenge": "Postflight Fuel & Hobbs",
+          "response":  "Log"
+        },
+        {
+          "challenge": "Master & Mags",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Cell Phone",
+          "response":  "On"
+        },
+        {
+          "challenge": "Flight Plan",
+          "response":  "Close"
+        },
+        {
+          "challenge": "Fuel Used",
+          "response":  "Note for Top-Off"
+        },
+        {
+          "challenge": "Grounding Cable",
+          "response":  "Clipped to Cap Chains"
+        },
+        {
+          "challenge": "Hold grounding clip onto the right cap or header cap (as appropriate) while removing caps, then clip to cap chain"
+        },
+        {
+          "challenge": "Header Tank Chain must be touching fuel in tank."
+        },
+        {
+          "challenge": "If Topping off",
+          "response":  "Cycle between wings but cap low wing when about 10 gal from full"
+        },
+        {
+          "challenge": "Fuel Added",
+          "response":  "Log Qty & Hobbs"
+        },
+        {
+          "challenge": "Fuel Qty",
+          "response":  "Reset to Total"
+        }
+      ],
+      "name":  "ROLLOUT \/ CLEAR OF RUNWAY \/ SHUTDOWN"
+    },
+    {
+      "items": [
+        {
+          "challenge": "Height",
+          "response":  "< 8000 MSL, >4500' AGL "
+        },
+        {
+          "challenge": "Airframe",
+          "response":  "GW < 1900#, Flaps & Trim"
+        },
+        {
+          "challenge": "(<20 gal with Dick + 220# passenger)"
+        },
+        {
+          "challenge": "Security",
+          "response":  "Parachute, Harnesses, Cockpit"
+        },
+        {
+          "challenge": "Engine",
+          "response":  "Boost Pump, Fuel, Mixture, "
+        },
+        {
+          "challenge": "Location",
+          "response":  "Satisfactory"
+        },
+        {
+          "challenge": "Lookout",
+          "response":  "Clearing Turns"
+        },
+        {
+          "challenge": "G",
+          "response":  "Check \/ Warmup"
+        },
+        {
+          "challenge": "No Rolling Recoveries"
+        },
+        {
+          "challenge": "Altitude",
+          "response":  "> 6000 MSL \/ 4500 AGL"
+        },
+        {
+          "challenge": "Airspeed",
+          "response":  "150 KIAS"
+        },
+        {
+          "challenge": "Over the Top",
+          "response":  "3G - 2Y"
+        },
+        {
+          "challenge": "Power",
+          "response":  "Off"
+        },
+        {
+          "challenge": "Flaps",
+          "response":  "Up"
+        },
+        {
+          "challenge": "Rudder",
+          "response":  "FULL Opposite Rotation"
+        },
+        {
+          "challenge": "Stick",
+          "response":  "Neutral"
+        },
+        {
+          "challenge": "FULL AFT for Developed Spin"
+        },
+        {
+          "challenge": "As Rotation Stops"
+        },
+        {
+          "challenge": "Stick",
+          "response":  "Release or Neutralize"
+        },
+        {
+          "challenge": "Rudder ",
+          "response":  "Neutralize"
+        },
+        {
+          "challenge": "Dive",
+          "response":  "Recover"
+        },
+        {
+          "challenge": "AOA",
+          "response":  "Use It"
+        },
+        {
+          "challenge": "G",
+          "response":  "+6 \/ -4"
+        }
+      ],
+      "name":  "AEROBATICS"
+    }
+  ]
+}
