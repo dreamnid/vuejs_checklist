@@ -25,5 +25,11 @@ module.exports = {
         mocha: true,
       },
     },
+    {
+      files: ['*.vue', '*.ts'],
+      rules: {
+        'max-len': 'off',
+      },
+    },
   ],
 };

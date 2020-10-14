@@ -1,5 +1,7 @@
 <template>
-  <div v-if="checklistsLoaded">
+  <!-- Using v-if="checklistsLoaded" in the below div doesn't work
+  because checklistsLoaded not declared properly for some reason -->
+  <div>
     <h1>Checklists</h1>
     <ul class="checklists">
       <checklist-view v-for="checklist in checklists"
@@ -13,22 +15,23 @@
 </template>
 
 <script lang="ts">
-  import Vue from 'vue'
-  import Component from "vue-class-component";
-  import {Action, Getter} from "vuex-class";
-  import {Checklist} from "../store";
-  import ChecklistView from "@/components/ChecklistView.vue";
+import Vue from 'vue';
+import Component from 'vue-class-component';
+import { Action, Getter } from 'vuex-class';
+import ChecklistView from '@/components/ChecklistView.vue';
+import { Checklist } from '../store';
 
   @Component({
-    components: {ChecklistView}
+    components: { ChecklistView },
   })
 
-  export default class ChecklistsIndex extends Vue {
+export default class ChecklistsIndex extends Vue {
     @Getter checklists!: Checklist[]
 
     @Action loadChecklists!: () => void
+
     mounted() {
-      this.loadChecklists()
+      this.loadChecklists();
     }
-  }
+}
 </script>

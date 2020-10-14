@@ -1,93 +1,93 @@
+/* eslint no-shadow: ["error", { "allow": ["state"] }] */
+
 import Vue from 'vue';
-import Vuex, {ActionContext} from 'vuex';
-import slugify from "slugify";
-import {cloneDeep} from "lodash-es";
-import createLogger from "vuex/dist/logger";
+import Vuex, { ActionContext } from 'vuex';
+import slugify from 'slugify';
+import { cloneDeep } from 'lodash-es';
+import createLogger from 'vuex/dist/logger';
 
 Vue.use(Vuex);
 
 export interface ChecklistItem {
-  challenge: string
-  response?: string
-  checked: boolean
+  challenge: string;
+  response?: string;
+  checked: boolean;
 }
 
 export interface Checklist {
-  name: string
-  items: ChecklistItem[]
+  name: string;
+  items: ChecklistItem[];
 }
 
 interface AppState {
-  checklists: Checklist[],
-  checklistsLoading: boolean,
-  checklistsError: Error | null
+  checklists: Checklist[];
+  checklistsLoaded: boolean;
+  checklistsError: Error | null;
 }
 
 const state: AppState = {
   checklists: [],
-  checklistsLoading: false,
+  checklistsLoaded: false,
   checklistsError: null,
-}
+};
 
 export default new Vuex.Store({
   state,
   getters: {
     checklists(state: AppState) {
-      return state.checklists
+      return state.checklists;
     },
     checklistBySlug(state: AppState): (slug: string) => Checklist | undefined {
-      return (slug: string) => state.checklists.find(c => slugify(c.name) === slug)
+      return (slug: string) => state.checklists.find((c) => slugify(c.name) === slug);
     },
   },
   mutations: {
-    ADD_CHECKLIST(state: AppState, {checklist}: {checklist: Checklist}) {
-      var newChecklists = cloneDeep(state.checklists)
-      newChecklists.push(checklist)
-      state.checklists = newChecklists
+    ADD_CHECKLIST(state: AppState, { checklist }: {checklist: Checklist}) {
+      const newChecklists = cloneDeep(state.checklists);
+      newChecklists.push(checklist);
+      state.checklists = newChecklists;
     },
-    ADD_ITEM(state: AppState, {checklistName, item}: {checklistName: string, item: ChecklistItem}) {
-      var newChecklists = cloneDeep(state.checklists)
-      var checklist = newChecklists.find((c: Checklist) => c.name === checklistName)
+    ADD_ITEM(state: AppState, { checklistName, item }: {checklistName: string; item: ChecklistItem}) {
+      const newChecklists = cloneDeep(state.checklists);
+      const checklist = newChecklists.find((c: Checklist) => c.name === checklistName);
       if (checklist) {
-        checklist.items.push(item)
-        state.checklists = newChecklists
+        checklist.items.push(item);
+        state.checklists = newChecklists;
       }
-
     },
-    TOGGLE_ITEM(state: AppState, {checklistName, itemIndex}: {checklistName: string, itemIndex: number}) {
-      var newChecklists = cloneDeep(state.checklists)
-      var checklist = newChecklists.find((c: Checklist) => c.name === checklistName)
+    TOGGLE_ITEM(state: AppState, { checklistName, itemIndex }: {checklistName: string; itemIndex: number}) {
+      const newChecklists = cloneDeep(state.checklists);
+      const checklist = newChecklists.find((c: Checklist) => c.name === checklistName);
       if (checklist) {
-        var item = checklist.items[itemIndex]
+        const item = checklist.items[itemIndex];
         if (item) {
-          item.checked = !item.checked
-          state.checklists = newChecklists
+          item.checked = !item.checked;
+          state.checklists = newChecklists;
         }
       }
     },
-    LOAD_CHECKLISTS(state: AppState, {checklists}: {checklists: Checklist[]}) {
-      state.checklists = checklists
+    LOAD_CHECKLISTS(state: AppState, { checklists }: {checklists: Checklist[]}) {
+      state.checklists = checklists;
     },
   },
   actions: {
-    loadChecklists({commit}: ActionContext<AppState, AppState>) {
+    loadChecklists({ commit }: ActionContext<AppState, AppState>) {
       fetch('http://localhost:3000/checklists')
-        .then(response => response.json())
-        .then(body => {
-          commit('LOAD_CHECKLISTS', {checklists: body})
+        .then((response) => response.json())
+        .then((body) => {
+          commit('LOAD_CHECKLISTS', { checklists: body });
         })
-        .catch(error => commit('SET_CHECKLIST_ERROR', true))
+        .catch((error) => commit('SET_CHECKLIST_ERROR', true));
     },
-    addChecklist({commit}: ActionContext<AppState, AppState>, {checklist}: {checklist: Checklist}) {
-      commit('ADD_CHECKLIST', {checklist})
-
+    addChecklist({ commit }: ActionContext<AppState, AppState>, { checklist }: {checklist: Checklist}) {
+      commit('ADD_CHECKLIST', { checklist });
     },
-    addItem({commit}: ActionContext<AppState, AppState>, {checklistName, item}: {checklistName: string, item: ChecklistItem}) {
-      commit('ADD_ITEM', {checklistName, item})
+    addItem({ commit }: ActionContext<AppState, AppState>, { checklistName, item }: {checklistName: string; item: ChecklistItem}) {
+      commit('ADD_ITEM', { checklistName, item });
     },
-    toggleItem({commit}: ActionContext<AppState, AppState>, {checklistName, itemIndex}: {checklistName: string, itemIndex: number}) {
-      commit('TOGGLE_ITEM', {checklistName, itemIndex})
-    }
+    toggleItem({ commit }: ActionContext<AppState, AppState>, { checklistName, itemIndex }: {checklistName: string; itemIndex: number}) {
+      commit('TOGGLE_ITEM', { checklistName, itemIndex });
+    },
   },
-  plugins: [createLogger()]
+  plugins: [createLogger()],
 });
