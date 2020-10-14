@@ -2,14 +2,14 @@
 
 ## Project setup
 ```
-npm install
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
 ```
 # To run the backend
 npx json-server --watch db.json
-npm run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
